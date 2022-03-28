@@ -2,7 +2,7 @@
 
 if [ $1 = "-p" ]
 then
-    if [ $2 = "-m" ] && [ -z "$3" ]
+    if [ $2 = "-m" ] && [ ! -z "$3" ]
     then
         git add .
         git commit -m "$3"
